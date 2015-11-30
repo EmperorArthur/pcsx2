@@ -45,6 +45,7 @@ else()
     list(APPEND CMAKE_LIBRARY_PATH /lib)
 endif()
 list(REMOVE_DUPLICATES CMAKE_LIBRARY_PATH)
+LINK_DIRECTORIES(/usr/lib/gcc/i586-linux-gnu/5)
 
 # If given a CMAKE_FIND_ROOT_PATH then
 # FIND_PROGRAM ignores CMAKE_FIND_ROOT_PATH (probably can't run)
